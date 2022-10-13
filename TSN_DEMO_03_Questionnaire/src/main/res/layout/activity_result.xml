@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Линейное выравнивание на весь экран,
+     используется фоновая картинка "background2" -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:text="@string/Сводные_данные"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D9D9D9D9"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:inputType="none"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="onInfo"
+        android:layout_margin="16dp"
+        android:text="@string/Next"
+        android:background="@drawable/button"
+        android:textColor="#FFFFFF"
+        android:textSize="7pt"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:onClick="onBack"
+        android:layout_margin="16dp"
+        android:text="@string/Назад"
+        android:background="@drawable/button"
+        android:textColor="#FFFFFF"
+        android:textSize="7pt"/>
+
+</LinearLayout>
